@@ -1,0 +1,1 @@
+window.alter('This is an alter')
