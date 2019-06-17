@@ -1,5 +1,6 @@
 import smtplib
 from email.mime.text import MIMEText
+import random
 
 class Function_D():
     def __init__(self):
@@ -20,4 +21,13 @@ class Function_D():
             print('Email Sent')
         except smtplib.SMTPException:
             print('Fail To Send')
+
+    def gen_ran_num(self):
+        ranstr = random.sample('ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890',6)
+        ranstr = ''.join(ranstr)
+        return ranstr
+
+
+
+
 
