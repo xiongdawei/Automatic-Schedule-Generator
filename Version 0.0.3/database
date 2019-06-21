@@ -1,0 +1,7 @@
+CREATE TABLE classtable {
+    id PRIMARY KEY,
+    class VARCHAR,
+    teacher VARCHAR,
+    timeslot INT,
+    place INT,
+};

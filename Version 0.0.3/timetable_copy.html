@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <title> Automatic Schedule Generator  </title>
+    <style>
+			table {
+				border:2px solid black;
+				border-collapse: collapse;
+				width:50%;
+			}
+			th, td {
+				border: 1px solid black;
+				padding: 5px;
+				text-align: center;
+			}
+			th{
+				background-color: lightgray
+			}
+			goback {
+			    text-align: center;
+			}
+
+    </style>
+</head>
+<div class="container">
+<div class="jum"
+    <body>
+<h1 id='container'> Class Table </h1>
+<a href="/" id = 'goback'>Go Back</a>
+<table align = center>
+    <tr>
+        <th></th>
+        <th> 8:00 - 8:40</th>
+        <th> 8:45 - 9:25</th>
+        <th> Break 9:25 - 10:05</th>
+        <th> 10:05 - 10:45</th>
+        <th> 10:50 - 11:30</th>
+        <th> 11:35 - 12:15</th>
+        <th> Lunch 12:15 - 13:40</th>
+        <th> 13:40 - 14:20</th>
+        <th> 14:25 - 15:05</th>
+        <th> 15:10 - 15:50</th>
+        <th> 15:55 - 16:35</th>
+        <th> 16:40 - 17:20</th>
+    </tr>
+    <tr>
+        <th> Monday</th>
+        <th> {{ mon10 }}</th>
+        <th> {{ mon11 }}</th>
+        <th>Flag Raising</th>
+        <th> {{ mon12 }}</th>
+        <th> {{ mon13 }}</th>
+        <th> Class Meeting</th>
+        <th> {{ mon98 }}</th>
+        <th> {{ mon15 }}</th>
+        <th> {{ mon16 }}</th>
+        <th> {{ mon17 }}</th>
+        <th> {{ mon18 }}</th>
+        <th> {{ mon19 }}</th>
+    </tr>
+    <tr>
+        <th> Tuesday</th>
+        <th> {{ mon20 }}</th>
+        <th> {{ mon21 }}</th>
+        <th>Break 9:25 - 10:05</th>
+        <th> {{ mon22 }}</th>
+        <th> {{ mon23 }}</th>
+        <th> {{ mon24 }}</th>
+        <th>Lunch 12:15 - 13:40</th>
+        <th> {{ mon25 }}</th>
+        <th> {{ mon26 }}</th>
+        <th> {{ mon27 }}</th>
+        <th> {{ mon28 }}</th>
+        <th> {{ mon29 }}</th>
+    </tr>
+    <tr>
+        <th> Wednesday</th>
+        <th> {{ mon30 }}</th>
+        <th> {{ mon31 }}</th>
+        <th>Break 9:25 - 10:05</th>
+        <th> {{ mon32 }}</th>
+        <th> {{ mon33 }}</th>
+        <th> {{ mon34 }}</th>
+        <th> {{ mon99 }} </th>
+        <th> {{ mon35 }}</th>
+        <th> {{ mon36 }}</th>
+        <th> {{ mon37 }}</th>
+        <th> {{ mon38 }}</th>
+        <th> {{ mon39 }}</th>
+    </tr>
+    <tr>
+        <th> Thursday</th>
+        <th> {{ mon40 }}</th>
+        <th> {{ mon41 }}</th>
+        <th>Break 9:25 - 10:05</th>
+        <th> {{ mon42 }}</th>
+        <th> {{ mon43 }}</th>
+        <th> {{ mon44 }}</th>
+        <th>Lunch 12:15 - 13:40</th>
+        <th> CAS</th>
+        <th> CAS</th>
+        <th> CAS</th>
+        <th> CAS</th>
+        <th> {{mon45}}</th>
+    </tr>
+    <tr>
+        <th> Friday</th>
+        <th> {{ mon50 }}</th>
+        <th> {{ mon51 }}</th>
+        <th>Break 9:25 - 10:05</th>
+        <th> {{ mon52 }}</th>
+        <th> {{ mon53 }}</th>
+        <th> {{ mon54 }}</th>
+        <th>Lunch 12:15 - 13:40</th>
+        <th> {{ mon55 }}</th>
+        <th> {{ mon56 }}</th>
+        <th> {{ mon57 }}</th>
+        <th> {{ mon58 }}</th>
+        <th> {{ mon59 }}</th>
+    </tr>
+
+</table>
+</body>
+</html>
