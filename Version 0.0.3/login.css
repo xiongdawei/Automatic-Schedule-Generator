@@ -1,0 +1,16 @@
+#tblForm .h-fixed{
+    position:absolute;
+    top:0;
+    font-size:14px;
+    border-bottom:1px solid #A3C0E8;
+    border-top:1px solid #A3C0E8;
+    background-color:rgb(239, 239, 239)
+}
+#tblForm .h-fixed li{
+    display:inline-block;
+    white-space: nowrap;
+    text-align:center;
+    line-height: 3.428571;
+    border-right:1px solid #A3C0E8;
+}
+ul.h-fixed li:first-child{border-left: 1px solid #A3C0E8;background-color: #E2F0FF}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+<script>
+    .sti-tbl-container {
+    height : 100%;
+    overflow : hidden;
+    display : flex;
+    flex-direction: column;
+}
+/* 设置表格的布局方式，用于宽度对齐 */
+.sti-tbl-body>table, .sti-tbl-header>table {
+    table-layout: fixed;
+}
+/* 设置表格内容容器，用于铺满整个剩余空间 */
+.sti-tbl-container .sti-tbl-body {
+    flex-grow : 1;
+    overflow-y : scroll;
+}
+
+</script>
+<body>
+
+<div class="container">
+<div class="jumbotron">
+
+	<div id="container" align = center>
+			<form  method="POST">
+			<h1> Teacher's Platform </h1>
+			<h3><i> Scheduling With Higher Efficiency </i></h3>
+		<div id="jumbotron" style="text-align:center">
+
+		</div>
+            </form>
+
+    </div>
+    </div>
+
+</div>
+<div align=center>
+  <form method="POST">
+    <input type="text" name="username" placeholder="input your text" />
+  </form>
+  <div>
+  <input type="submit" value="log in ">
+  </div>
+  <form class="form-inline" action="{{ url_for('test') }}">
+  <div class="form-group">
+    <div class="input-group">
+        <span class="input-group-addon">Please select</span>
+            <select name="comp_select" class="selectpicker form-control">
+              {% for o in data %}
+              <option value="{{ o.name }}">{{ o.name }}</option>
+              {% endfor %}
+            </select>
+    </div>
+    <button type="submit" class="btn btn-default">Go</button>
+  </div>
+</form>
+
+</div>
+
+</div>

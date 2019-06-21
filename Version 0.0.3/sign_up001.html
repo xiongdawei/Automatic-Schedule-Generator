@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet"
+  href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+</head>
+
+<body>
+
+<div class="container">
+<div class="jumbotron">
+	<h1 id="container"> Welcome! </h1>
+	<h3><i> Powered by Air Sealand </i></h3>
+
+</div><div align = center>
+        <h5> Sign up  <a href="/">Go Back</a></h5>
+		<div style="text-align:center" id = 'jumbotron'>
+		<form action="{{ url_for('sign_up')}}" method="post">
+	    <input type="text" name="username" placeholder="input your name" />
+        <input type="email" name="email" placeholder="input your email">
+		<input type="text" name="property" placeholder ='student/teacher'>
+        <input type="password" name="psw" placeholder="set your own password" size="25"/>
+		<input type="password" name="psw_reconfirm" placeholder="input again to reconfirm" size="25"/>
+		<input type="submit" value="Sign up">
+		</div>
+</body>
+</html>
+
